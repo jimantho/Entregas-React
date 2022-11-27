@@ -1,10 +1,14 @@
 
+import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
+import { Navbar } from "./components/navBar/NavBar";
+
+
 function App() {
   return (
     <div>
-      <h1>
-        Mi proyecto
-      </h1>
+      <Navbar />
+      <ItemListContainer />
+      
     </div>
   );
 }
