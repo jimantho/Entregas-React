@@ -1,0 +1,38 @@
+*{
+    border-style: none;
+    
+}
+.contenedor-counter{
+    display: inline-block;
+    width: 160px;
+    margin-left: 5px;
+    
+}
+.counter{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    margin-bottom: 5px;
+    
+}
+
+
+.btn-resta, .input-cantidad, .btn-suma {
+    width: 33.33%;
+    align-content: center;
+    text-align: center;
+}
+
+.contenedor-btnAgregar{
+    text-align: center;
+}
+.btn-agregar{
+    color: rgb(255, 255, 255);
+    background-color: #f58d86;
+    border-radius: 5px;
+    width: 100%;
+}
+.content-msjStock{
+    text-align: center;
+}
