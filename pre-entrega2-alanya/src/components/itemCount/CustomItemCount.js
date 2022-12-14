@@ -1,22 +1,11 @@
 import "./CustomItemCount.css"
 
-export const CustomItemCount = ({ valorCantidad, setValorCantidad, stock }) => {
-
-
-
-    const sumar = () => {
-        valorCantidad < stock ? setValorCantidad(valorCantidad + 1) : setValorCantidad(valorCantidad);
-    }
-    const restar = () => {
-        valorCantidad !== 1 ? setValorCantidad(valorCantidad - 1) : setValorCantidad(valorCantidad)
-    }
-
-
+export const CustomItemCount = ({ valorCantidad,  setDescripcionStock, sumar, restar}) => {
 
     return (
         <div>
             <div className="contenedor-counter">
-            <div className="content-msjStock">{stock === 0 ? "Sin Stock":"Stock Disponible"}</div>
+            <div className="content-msjStock">{setDescripcionStock}</div>
                 <div className="counter">
                     <button className="btn-resta" onClick={restar}>-</button>
                     <input className="input-cantidad" value={valorCantidad}></input>

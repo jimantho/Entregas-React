@@ -1,12 +1,16 @@
 import ItemCount from "../itemCount/ItemCount.js"
+import ItemList from "../itemList/ItemList.js"
 
 
-export const ItemListContainer = ({greeting}) => {
+export const ItemListContainer = ({ greeting }) => {
+  
+
   return (
     <div>
       <h1> {greeting}</h1>
-      <ItemCount></ItemCount>
-      
+      <ItemList />
+      <ItemCount />
+
     </div>
   )
 }

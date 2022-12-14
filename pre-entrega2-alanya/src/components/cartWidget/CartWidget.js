@@ -10,7 +10,7 @@ import { BsCart4 } from "react-icons/bs"
 import { FaUserCircle } from "react-icons/fa"
 import { BsTruck } from "react-icons/bs"
 import "./CartWidget.css"
-import {theme} from "../colorMui"
+import {theme} from "../../temas/colorMui"
 import {ThemeProvider } from '@mui/material/styles';
 
 
