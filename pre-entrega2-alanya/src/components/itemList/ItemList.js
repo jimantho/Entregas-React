@@ -12,18 +12,16 @@ const ItemList = () => {
     });
 
     itemsPromesa
-    .then((item) => { setItems(item) })
-    .catch((err) => {console.log("se rechazo solicitud") })
+      .then((res) => { setItems(res) })
+      .catch((err) => { console.log(err) })
     console.log(items)
 
-  }, [
-    
-  ]);
+  }, []);
 
   return (
     <div>
       <div>
-        {items.map((elemento) => { return (<Item key={elemento.name} elemento = {elemento} />) })}
+        {items.map((elemento) => { return (<Item key={elemento.name} elemento={elemento} /> ) })}
 
       </div>
 

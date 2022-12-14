@@ -1,5 +1,5 @@
 
-export const Item = (elemento) => {
+export const Item = ({elemento}) => {
     return (
         <div>
             <div>
